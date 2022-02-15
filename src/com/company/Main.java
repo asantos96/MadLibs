@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -24,6 +26,34 @@ public class Main {
         //Don’t forget to stage and commit changes in git as you go along
         //Bonus: Get the words to fill each array by asking the user to supply them.
 
+        //Array random info below
+        // String[] fruits = { "apples", "oranges", "bananas" }; // Array literal syntax
+        // int[] accountNumbers = new int[10]; // Array declaration syntax:
+
+
+        String[] nouns = {"woman" , "home", "dog", "chair", "water bottle"};
+        String[] adjectives = {"blue" , "tall", "round", "tiny", "short"};
+        String[] verbs = {"think" , "fly", "drive", "swim", "walk"};
+
+
+        Random myNumberGenerator = new Random();
+        System.out.println("Random number test : " + myNumberGenerator.nextInt(4));
+
+        //String Story
+
+        System.out.println ( "One day a " + nouns[myNumberGenerator.nextInt(5)] + " came across a " +
+                adjectives[myNumberGenerator.nextInt(5)] + " " + nouns[myNumberGenerator.nextInt(5)]
+                + "." + " The " + nouns[myNumberGenerator.nextInt(5)] + " could " +
+                verbs[myNumberGenerator.nextInt(5)] + " all the way back to the " +
+                nouns[myNumberGenerator.nextInt(5)] + ".");
+
+        }
+
+
+
+
+
+
 
     }
-}
+
