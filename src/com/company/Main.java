@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Main {
@@ -31,21 +33,54 @@ public class Main {
         // int[] accountNumbers = new int[10]; // Array declaration syntax:
 
 
-        String[] nouns = {"woman" , "home", "dog", "chair", "water bottle"};
-        String[] adjectives = {"blue" , "tall", "round", "tiny", "short"};
-        String[] verbs = {"think" , "fly", "drive", "swim", "walk"};
+//        String[] nouns = {"woman" , "home", "dog", "chair", "water bottle"};
+//        String[] adjectives = {"blue" , "tall", "round", "tiny", "short"};
+//        String[] verbs = {"think" , "fly", "drive", "swim", "walk"};
+//
+//
+//        Random myNumberGenerator = new Random();
+//        System.out.println("Random number test : " + myNumberGenerator.nextInt(4));
+//
+//        //String Story
+//
+//        System.out.println ( "One day a " + nouns[myNumberGenerator.nextInt(5)] + " came across a " +
+//                adjectives[myNumberGenerator.nextInt(5)] + " " + nouns[myNumberGenerator.nextInt(5)]
+//                + "." + " The " + nouns[myNumberGenerator.nextInt(5)] + " could " +
+//                verbs[myNumberGenerator.nextInt(5)] + " all the way back to the " +
+//                nouns[myNumberGenerator.nextInt(5)] + ".");
+
+        List randomNouns = new ArrayList();
+        randomNouns.add ("woman");
+        randomNouns.add ("home");
+        randomNouns.add ("dog");
+        randomNouns.add ("chair");
+        randomNouns.add ("water bottle");
+
+        List randomAdjectives = new ArrayList();
+        randomAdjectives.add ("blue");
+        randomAdjectives.add ("tall");
+        randomAdjectives.add ("round");
+        randomAdjectives.add ("tiny");
+        randomAdjectives.add ("short");
+
+
+        List randomVerbs = new ArrayList();
+        randomVerbs.add ("think");
+        randomVerbs.add ("fly");
+        randomVerbs.add ("drive");
+        randomVerbs.add ("swim");
+        randomVerbs.add ("walk");
 
 
         Random myNumberGenerator = new Random();
-        System.out.println("Random number test : " + myNumberGenerator.nextInt(4));
 
-        //String Story
+        System.out.println ("One day a " + randomNouns.get(myNumberGenerator.nextInt(5)) + " came across a " +
+                randomAdjectives.get(myNumberGenerator.nextInt(5)) + " " +
+                randomNouns.get(myNumberGenerator.nextInt(5)) + "." +
+                " The " + randomNouns.get(myNumberGenerator.nextInt(5)) + " could " +
+                randomVerbs.get(myNumberGenerator.nextInt(5)) + " all the way back to the " +
+                randomNouns.get(myNumberGenerator.nextInt(5)) + ".");
 
-        System.out.println ( "One day a " + nouns[myNumberGenerator.nextInt(5)] + " came across a " +
-                adjectives[myNumberGenerator.nextInt(5)] + " " + nouns[myNumberGenerator.nextInt(5)]
-                + "." + " The " + nouns[myNumberGenerator.nextInt(5)] + " could " +
-                verbs[myNumberGenerator.nextInt(5)] + " all the way back to the " +
-                nouns[myNumberGenerator.nextInt(5)] + ".");
 
         }
 
